@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Descubra seu Signo</title>
+
+      <link rel="stylesheet" href="./styles.css">
+
+      <style>
+
+        #data{
+            text-align: center;
+            margin-left: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.781), 2px 2px 2px rgba(255, 255, 255, 0.582), 3px 3px 3px rgba(255, 255, 255, 0.411), 2px 3px 2px rgba(255, 255, 255, 0.849);
+        }
+
+        label{
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.87), 2px 2px 2px 1px rgba(255, 255, 255, 0.658);
+        }
+        body{
+            background-image: url(constela.jpg);
+        }
+
+        section{
+            background-color: rgba(0, 0, 0, 0.699);
+            margin: auto;
+            width: 500px;
+            padding: 50px;
+            border-radius: 40px;
+            box-shadow: 1px 3px 5px 2px black;
+            margin-top: 100px;
+        }
+
+        #button{
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            margin-left: 200px;
+            padding: 10px;
+            border-color: white;
+        }
+
+        #button:hover{
+            background: rgb(255, 255, 255);
+            color: black;
+        }
+
+
+
+
+
+      </style>
+    
+</head>
+<body>
+
+    <header>
+        <h1>O quanto você se parece com seu signo?</h1>
+    </header>
+      <section>
+      <form action="signos.php" method="post">
+            <label class="nascimento" for="dataNascimento">Digite a data do seu nascimento: </label>
+            <input type="date" name="dataNascimento" id="data" required oninvalid="this.setCustomValidity('Campo obrigatorio')" oninput="setCustomValidity('')"><br>
+            <br>
+            <input type="submit" name="btnEnviar" id="button" value="Conferir">
+      </form>
+      </section>
+      
+      
+
+</body>
+</html>
